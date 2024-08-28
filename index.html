@@ -1,134 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title> Desiree's Choices </title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-      body { 
-        font-family:Georgia, 'Times New Roman', Times, serifx;
-        background-color: white;
-      }
-   </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
-
-  <div class = "navbar">
-    <a href = ""> Home </a>
-    <a href = "projects.html"> Projects </a>
-    <a href = "#"> About Me </a>
-    <a href = "#"> Contact </a>
-  </div>
-
-  
-
-  <section id = "front">
-    <div class = "gradient-background" style="height: 800px;"> </div>
-    <picture>
-      <source srcset="images/des_choices.png" media="(max-width: 800px)">
-      <img class = "desCHlogo" src = "images/des_choices.png" alt = "Desiree's Choices logo">
-    </picture>
-  </section>
-
-  <section id = "aboutMe">
-    <div class = "aboutme_overlay">
-      <img class = "me_img" src = "images/aboutme_des.png" alt = "Desiree smiling">
-    </div>
-
-    <div class = "intro">
-
-    <div class = "aboutme_description">
-      <h1> Hi, I'm Desiree! </h1>
-      <p> I am an uprising senior computer-science student. I currently go to school 
-        at UC San Diego where I have been involved in a few coding projects, 
-        but I thought making a website would be a different way to explore some of 
-        my other passions. On here, you get to see some of my favorite things to do to 
-        past some free  time. This includes exploring new music, watching [and reviewing]
-        movies, follow my mind and SD adventures, and see how I survive 
-        as a college student!
-      </p>
-    </div>
-  </section>
-
-  <secton id = "education"> 
-    <div class = "Coursework">
-      <h1> Course work </h1>
-      <ul>
-        <li> Basic Data Structures and Object Oriented Design </li>
-        <li> Advanced Data Structures </li>
-        <li> Software Engineering </li>
-        <li> Algorithm Design and Analysis </li>
-        <li> Computer Organization and Systems Programming </li>
-      </ul>
-    </div>
-  </secton>
-
-  <section id = "image_picker">
-    <h1> Projects </h1>
-
-    <div class = "nav_images"> 
-      <div class="ft">
-        <a href="https://github.com/dalc24/Calc">
-          <img class="fast_tab" src="images/fast_tab.jpg" alt="Desk with journal">
-          <div class="ft_overlay">
-            <div class="ft_title">Calculator App</div>
-            <p class="ft_description"> Java/JavaScript </p>
+  <body>
+    <!-- header-->
+    <header id = "home"> 
+      <!-- navbar -->
+       <nav id = "nav"> 
+        <div class="nav-center">
+          <!-- nav header-->
+           <div class="nav-header">
+            <button class = "nav-toggle"> 
+              <i class = "fas fa-bars"> </i>
+            </button>
+           </div>
+           <!-- links -->
+            <div class="links-container">
+              <ul class="links">
+                <li>
+                  <a href="#home" class="scroll-link">home</a>
+                </li>
+                <li>
+                  <a href="#about" class="scroll-link">about</a>
+                </li>
+                <li>
+                  <a href="#projects" class="scroll-link">projects</a>
+                </li>
+                <li>
+                  <a href="#tours" class="scroll-link">tours</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+       </nav>
+       <!-- banner -->
+        <div class="banner">
+          <div class="container">
+            <h1 id = "intro">  </h1>
+            <p>
+              UC San Diego Computer Science grad '24 with a passion for programming and creating cool tech solutions. Coding my way through tech adventures!           </p>
+            <a href = #tours class = "scroll-link btn btn-white">
+              explore tours 
+            </a>
           </div>
-        </a>
-      </div>
-
-    <div class = "musicTB">
-      <a href = "https://github.com/ucsd-cse110-sp23/cse-110-project-team-3">
-        <img class = "music_tab" src="images/music_tab.jpg" alt="Artist Smino on stage at SunGod festival stage">
-        <div class = "musicTB_overlay">
-          <div class = "musicTB_title"> Say-It Assistant </div>
-          <p class = "musicTB_description"> Java/JavaScript </p>
-       </div>
-      </a>
-    </div>
-
-    <div class = "moviesTB">
-      <a href = "#">
-        <img class = "movies_tab" src="images/movies_tab.jpg" alt="Silhouettte with DC Comic book background">
-        <div class = "moviesTB_overlay">
-          <div class = "moviesTB_title"> Website </div>
-          <p class = "moviesTB_description"> HTML/CSS </p>
         </div>
-      </a>
-    </div>
+    </header>
+    <!-- about -->
+    <section id = "about" class = "section">
+      <div class = "title">
+        <h2>about
+          <span> us </span>
+        </h2>
+      </div> 
+    </section>
+    <!-- services -->
+    <section id = "projects" class = "section">
+      <div class = "title">
+        <h2>Project
+          <span> Portfolio </span>
+        </h2>
+      </div> 
+    </section>
+    <!-- tours -->
+    <section id = "tours" class = "section">
+      <div class = "title">
+        <h2>featured
+          <span> tours </span>
+        </h2>
+      </div> 
+    </section>
 
-    <div class = "thoughtsTB">
-      <a href = "#">
-        <img class = "thoughts_tab" src="images/thoughts_tab.jpg" alt="Torrey Pines scenic trail">
-        <div class = "thoughtsTB_overlay">
-          <div class = "thoughtsTB_title"> Github </div>
-          <p class = "thoughtsTB_description"> See other projects </p>
-        </div>
-      </a>
-    </div>
-  </section>
-
-  <section id="contact">
-  <h1>Contact</h1>
-      <div class = "email">
-        <h3>Email:</h3>
-        <a href="#"> desireealcantaraa@gmail.com</a>
-
-        <p> Please feel free to contact me via email and other links. 
-          I look forward to hearing from you soon. </p>
-      </div>
-
-      <div class = "links">
-        <h3>Links:</h3>
-        <a href="#">LinkedIn</a>
-        <a href="#">GitHub</a>
-      </div>
-  </section>
-
-  </footer>
-
-
-  
-
+    <!-- footer -->
+     <footer class = "section">
+      <p> copyright &copy; backgroads trave tours company 
+        <span id = "date"> </span>
+      .all rights reserved
+    </p>
+     </footer>
+    <!-- back to top button-->
+    
+    <a href="#home" class = "scroll-link top-link">
+      <i class="fas fa-arrow-up"> </i>
+    </a>
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
 </html>
