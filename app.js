@@ -17,10 +17,6 @@ function typing(element, text, i = 0){
 }
 
 typing(div, text);
-
-setInterval(() => {
-    typing(div, text, i + 1);
-}, 30000);
 // ********** set date ************
 const date = document.getElementById('date');
 date.innerHTML = new Date().getFullYear();
@@ -91,3 +87,30 @@ scrollLinks.forEach((link) => {
     linksContainer.style.height = 0;
   });
 });
+
+// ********** about me section ************
+const btns = document.querySelectorAll('.tab-btn');
+const aboutMe = document.querySelector('.aboutMe');
+const articles = document.querySelectorAll(".content");
+
+aboutMe.addEventListener('click', function(e) {
+    //data id has attribute -> could get
+    const id = e.target.dataset.id;
+    if (id) {
+        // remove active from other buttons
+        btns.forEach(function(btn){
+            btn.classList.remove("active");
+            e.target.classList.add("active");
+        });
+        // hide other articles
+        articles.forEach(function(article){
+            article.classList.remove("active");
+        });
+        const element = document.getElementById(id);
+        element.classList.add("active");
+    }
+});
+
+
+
+
