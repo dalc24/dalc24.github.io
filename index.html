@@ -3,12 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Desiree Portfolio</title>
+    <title>Desiree Alcantara Website</title>
     <!-- font-awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- socilal emdia links -->
+    <script src="https://kit.fontawesome.com/bfc62eac67.js" crossorigin="anonymous"></script>
+    <!-- arrow button-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- SwiperJS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <!-- styles -->
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -34,10 +41,13 @@
                   <a href="#about" class="scroll-link">about</a>
                 </li>
                 <li>
+                  <a href="#tours" class="scroll-link">skills</a>
+                </li>
+                <li>
                   <a href="#projects" class="scroll-link">projects</a>
                 </li>
-           <!--     <li>
-                  <a href="#tours" class="scroll-link">tours</a>
+            <!--    <li>
+                  <a href="#contact" class="scroll-link">contact</a>
                 </li> -->
               </ul>
             </div>
@@ -49,9 +59,22 @@
             <h1 id = "intro">  </h1>
             <p>
               UC San Diego Computer Science grad '24 with a passion for programming and creating cool tech solutions. Coding my way through tech adventures!           </p>
-            <a href = #projects class = "scroll-link btn btn-white">
+           <!-- <a href = #projects class = "scroll-link btn btn-white">
               Personal Projects
-            </a>
+            </a> -->
+
+            <div class="social-container">
+              <div class="social-links">
+                <a href="https://github.com/dalc24"> 
+                  <i class="fa-brands fa-github"> </i> 
+                </a>
+                <span class="material-symbols-outlined">
+                  mail 
+                </span>
+                <span class = "email"> desireealcantaraa@gmail.com</span>
+              </div>
+            </div>
+
           </div>
         </div>
     </header>
@@ -72,7 +95,7 @@
           <div class="btn-container">
             <button class="tab-btn active" data-id="me-background">background</button>
             <button class="tab-btn" data-id="education">education</button>
-            <button class="tab-btn" data-id="skills">skills</button>
+            <button class="tab-btn" data-id="skills">coursework</button>
           </div>
           <div class="about-content">
             <!-- single item -->
@@ -131,22 +154,139 @@
       </div>
 
     </section>
-    <!-- services -->
+
+    <!-- tours -->
+    <section id = "tours" class = "section">
+      <div class = "title">
+        <h2> Skills
+          <span> and Technologies </span>
+        </h2>
+      </div> 
+
+      <div class="skt-container">
+
+        <div class="skt-column">
+          <div class="sk-column">
+            <h2> Skills </h2>
+            <ul>
+              <li> Python </li>
+              <li> Java </li>
+              <li> JavaScript </li>
+              <li> C </li>
+              <li> C++ </li>
+              <li> SQL </li>
+              <li> HTML/CSS </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="skt-column">
+          <div class="tech-column">
+            <h2> Technologies </h2>
+            <ul>
+              <li> Git </li>
+              <li> Linux </li>
+              <li> Unix </li>
+              <li> Matplotlib </li>
+              <li> scikit-learn </li>
+              <li> SQLite </li>
+            </ul>
+           </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- projects -->
     <section id = "projects" class = "section">
       <div class = "title">
         <h2>Project
           <span> Portfolio </span>
         </h2>
+
+        <div class="container swiper">
+          <div class="card-wrapper">
+            <ul class="card-list swiper-wrapper">
+    
+              <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                  <img src="images/developer.jpg" alt="Card Image" class="card-image">
+                  <p class="badge developer"> Developer </p>
+                  <h2 class="card-title"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate quia magnam id nobis ratione rerum repellat iure vel maxime temporibus?</h2>
+                  <button class="card-button 
+                  material-symbols-outlined"> arrow_forward </button>
+                </a>
+              </li>
+    
+              <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                  <img src="images/designer.jpg" alt="Card Image" class="card-image">
+                  <p class="badge designer"> Designer </p>
+                  <h2 class="card-title"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate quia magnam id nobis ratione rerum repellat iure vel maxime temporibus?</h2>
+                  <button class="card-button 
+                  material-symbols-outlined"> arrow_forward </button>
+                </a>
+              </li>
+    
+              <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                  <img src="images/marketer.jpg" alt="Card Image" class="card-image">
+                  <p class="badge marketer"> Marketer </p>
+                  <h2 class="card-title"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate quia magnam id nobis ratione rerum repellat iure vel maxime temporibus?</h2>
+                  <button class="card-button 
+                  material-symbols-outlined"> arrow_forward </button>
+                </a>
+              </li>
+    
+              <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                  <img src="images/gamer.jpg" alt="Card Image" class="card-image">
+                  <p class="badge gamer"> Gamer </p>
+                  <h2 class="card-title"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate quia magnam id nobis ratione rerum repellat iure vel maxime temporibus?</h2>
+                  <button class="card-button 
+                  material-symbols-outlined"> arrow_forward </button>
+                </a>
+              </li>
+    
+              <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                  <img src="images/editor.jpg" alt="Card Image" class="card-image">
+                  <p class="badge editor"> Editor </p>
+                  <h2 class="card-title"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate quia magnam id nobis ratione rerum repellat iure vel maxime temporibus?</h2>
+                  <button class="card-button 
+                  material-symbols-outlined"> arrow_forward </button>
+                </a>
+              </li>
+    
+            </ul>
+    
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+    
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+          </div>
+        </div>
+    
+        <!-- Link -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Linking SwiperJS-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
       </div> 
+
     </section>
-    <!-- tours -->
-  <!--    <section id = "tours" class = "section">
+    <!--contact-->
+ <!--   <section id = "contact" class = "section">
       <div class = "title">
-        <h2>featured
-          <span> tours </span>
+        <h2> Contact
+          <span> Me </span>
         </h2>
       </div> 
-    </section>s --> 
+    </section> -->
 
     <!-- footer -->
      <footer class = "section">
