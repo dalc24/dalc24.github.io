@@ -12,19 +12,15 @@ Variables
 */
 
 :root {
-  /* dark shades of primary color*/
-  --clr-primary-1: hsl(205, 86%, 17%);
-  --clr-primary-2: hsl(205, 77%, 27%);
-  --clr-primary-3: hsl(205, 72%, 37%);
-  --clr-primary-4: hsl(205, 63%, 48%);
+  /* ligher shades of primary color*/
+  --clr-primary-1: rgb(248, 189, 189);
+  --clr-primary-2: rgb(255, 243, 243);
+  --clr-primary-3: rgb(252, 222, 224);
+  --clr-primary-4: rgb(255, 236, 236);
   /* primary/main color */
-  --clr-primary-5: #49a6e9;
-  /* lighter shades of primary color */
-  --clr-primary-6: hsl(205, 89%, 70%);
-  --clr-primary-7: hsl(205, 90%, 76%);
-  --clr-primary-8: hsl(205, 86%, 81%);
-  --clr-primary-9: hsl(205, 90%, 88%);
-  --clr-primary-10: hsl(205, 100%, 96%);
+  --clr-primary-5: rgb(240, 97, 109);
+  /* tan shades of palette*/
+  --clr-primary-6: #feebd6;
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-2: hsl(211, 39%, 23%);
@@ -33,10 +29,12 @@ Variables
   /* grey used for paragraphs */
   --clr-grey-5: hsl(210, 22%, 49%);
   --clr-grey-6: hsl(209, 23%, 60%);
-  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-7: javascript-practice/scroll/index.htmlhsl(211, 27%, 70%);
   --clr-grey-8: hsl(210, 31%, 80%);
   --clr-grey-9: hsl(212, 33%, 89%);
   --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-grey-11: rgba(241,240,241,255);
+  --clr-grey-12: rgb(232, 232, 232);
   --clr-white: #fff;
   --clr-red-dark: hsl(360, 67%, 44%);
   --clr-red-light: hsl(360, 71%, 66%);
@@ -188,11 +186,7 @@ main {
   display: grid;
   place-items: center;
 }
-/*
-=============== 
-Scroll
-===============
-*/
+
 /* navbar */
 nav {
   background: var(--clr-white);
@@ -340,6 +334,33 @@ header {
     max-width: 40rem;
   }
 }
+
+.social-links {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+.social-links a {
+  color: white; 
+  font-size: 24px; 
+  text-decoration: none;
+  margin-right: 24px; 
+}
+
+.social-links .material-symbols-outlined {
+  font-size: 24px; 
+  color: white;
+  margin-right: 8px; 
+}
+
+
+.email {
+  font-size: 18px; 
+  color: white; 
+  text-decoration: none; 
+}
+
 /* sections and title */
 .title h2 {
   text-align: center;
@@ -352,7 +373,7 @@ header {
 #about,
 #projects,
 #tours {
-  height: 80vh;
+  height: 90vh;
   overflow: hidden;
 }
 
@@ -407,7 +428,7 @@ header {
     letter-spacing: var(--spacing);
   }
   .tab-btn:hover:not(.active) {
-    background: var(--clr-primary-10);
+    background: var(--clr-primary-4);
     color: var(--clr-primary-5);
   }
   .about-content {
@@ -425,17 +446,200 @@ header {
   .content.active {
     display: block;
   }
+
+
+
 /*projects section */
 
 #projects {
-  background: var(--clr-white);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(var(--clr-grey-11), var(--clr-grey-12));
+  overflow: hidden;
 }
+
+
+.card-wrapper {
+  max-width: 1150px;
+  margin: 0 60px 35px;
+  padding: 20px 10px;
+
+}
+
+.card-list {
+  list-style: none;
+}
+
+.card-list .card-item .card-link {
+  user-select: none;  
+  display: block;
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  
+
+}
+
+.card-list .card-item .card-link:hover {
+ border-color: var(--clr-primary-5);
+}
+
+.card-list .card-link .card-image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-list .card-link .badge {
+  color: #5372F0;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 16px 0 18px;
+  background: #DDE4FF;
+  width: fit-content;
+  border-radius: 50px;
+}
+
+.card-list .card-link .badge.designer {
+  color: #B22485;
+  background: #f7DFF8;
+}
+
+.card-list .card-link .badge.marketer {
+  color: #b25a2b;
+  background: #ffe3d2;
+}
+
+
+.card-list .card-link .badge.gamer {
+  color: #205c20;
+  background: #d6f8d6;
+}
+
+
+.card-list .card-link .badge.editor {
+  color: #856404;
+  background: #fff3cd;
+}
+
+
+.card-list .card-link .card-title {
+  font-size: 1.19rem;
+  color: #000;
+  font-weight:  600;
+}
+.card-list .card-link .card-button {
+  height: 35px;
+  width: 35px;
+  color: var(--clr-primary-5);
+  border-radius: 50%;
+  margin: 30px 0 5px;
+  background: none;
+  cursor: pointer;
+  border: 2px solid var(--clr-primary-5);
+  transform: rotate(-45deg);
+  transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button {
+  color: #fff;
+  background: var(--clr-primary-5);
+}
+
+/* skills section */
+
+#tours {
+  background-color: white; 
+  height: 80vh; 
+}
+
+.skt-container {
+  display: flex;
+  justify-content: center; 
+  align-items: stretch; 
+  gap: 20px; 
+  padding: 20px; 
+  flex-direction: row;
+}
+
+.skt-column {
+  background: var(--clr-grey-10);
+  padding: 20px; 
+  flex: 1; 
+  max-width: 30rem; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.sk-column ul, .tech-column ul {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 5px; 
+}
+
+.sk-column li, .tech-column li {
+  padding: 5px 16px;
+  font-size: 1.10rem;
+  font-weight: 700;
+  margin: 3px 0;
+  width: fit-content;
+  border-radius: 10px;
+  text-align: center; 
+
+  transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+}
+
+.sk-column li:hover, .tech-column li:hover {
+  color: white;
+  box-shadow: inset 200px 0 0 0 #ff8888;;
+}
+
+@media (max-width: 768px) {
+  .skt-container {
+      flex-direction: column;
+      align-items: center; 
+  }
+
+  .sk-column ul, .tech-column ul {
+      grid-template-columns: repeat(3, 1fr); 
+  }
+}
+
+@media (max-width: 480px) {
+  .sk-column ul, .tech-column ul {
+      grid-template-columns: 1fr;
+  }
+}
+
+/* contact section */
+#contact {
+  height: 60vh;
+}
+
+
+
+/* footer section */
+
 footer {
   background: var(--clr-grey-1);
   padding: 5rem 1rem;
 }
 footer p {
-  color: var(--clr-white);
+  color: white;
   text-align: center;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
