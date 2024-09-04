@@ -88,7 +88,7 @@ scrollLinks.forEach((link) => {
   });
 });
 
-// ********** about me section ************
+// ********** about me section tabs ************
 const btns = document.querySelectorAll('.tab-btn');
 const aboutMe = document.querySelector('.aboutMe');
 const articles = document.querySelectorAll(".content");
@@ -111,6 +111,36 @@ aboutMe.addEventListener('click', function(e) {
     }
 });
 
+
+// ********** projects -- swiper************
+new Swiper('.card-wrapper', {
+    loop: true,
+    spaceBetween: 30,
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true
+    },
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // Adjusted Breakpoints
+    breakpoints: {
+        0: {
+            slidesPerView: 1.5
+        },
+        600: {
+            slidesPerView: 2.5, 
+        },
+        1200: {
+            slidesPerView: 3, 
+        }
+    }
+});
 
 
 
