@@ -46,9 +46,9 @@
                 <li>
                   <a href="#projects" class="scroll-link">projects</a>
                 </li>
-            <!--    <li>
+                <li>
                   <a href="#contact" class="scroll-link">contact</a>
-                </li> -->
+                </li>
               </ul>
             </div>
         </div>
@@ -59,10 +59,6 @@
             <h1 id = "intro">  </h1>
             <p>
               UC San Diego Computer Science grad '24 with a passion for programming and creating cool tech solutions. Coding my way through tech adventures!           </p>
-           <!-- <a href = #projects class = "scroll-link btn btn-white">
-              Personal Projects
-            </a> -->
-
             <div class="social-container">
               <div class="social-links">
                 <a href="https://github.com/dalc24"> 
@@ -171,11 +167,11 @@
             <ul>
               <li> Python </li>
               <li> Java </li>
-              <li> JavaScript </li>
               <li> C </li>
               <li> C++ </li>
               <li> SQL </li>
               <li> HTML/CSS </li>
+              <li> JavaScript </li>
             </ul>
           </div>
         </div>
@@ -280,13 +276,56 @@
 
     </section>
     <!--contact-->
- <!--   <section id = "contact" class = "section">
+    <section id = "contact" class = "section">
       <div class = "title">
         <h2> Contact
           <span> Me </span>
         </h2>
       </div> 
-    </section> -->
+
+      <div class="form-container">
+        <div class="form">
+          <div class="contact-info"> 
+            <div class="first-text"> Let's get in touch </div>
+            <img src="contact-img.png" alt="" class="contact-img">
+             <div class="contact-links">
+              <span class="secnd-text">Connect with me: </span>
+              <ul class="social-media-links">
+                <li><a href="https://github.com/dalc24"> <i class="fa-brands fa-github"> </i></a></li>
+                <li><a href="https://www.linkedin.com/in/desiree-alcantara/"> <i class="fa-brands fa-linkedin"></i></a></li>
+              </ul>
+             </div>
+          </div>
+
+          <div class="contact-form"> 
+            <h4 class="third-text th-text">Send a Message</h4>
+
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="a03fbbf5-aed8-4950-88e5-d94ebfcef13a">
+
+             <div class="input-box">             
+              <input type="text" class = "contact-input" name="name" required>
+              <label for=""> Name</label>
+             </div>
+
+             <div class="input-box">             
+              <input type="email" class = "contact-input" name="email" required>
+              <label for=""> Email</label>
+             </div>
+
+             <div class="input-box">
+              <textarea name="message" class="contact-input" required id = "message" cols="30" rows="10"></textarea>
+              <label for="">Message</label>
+             </div>
+
+             <input type="submit" class="contact-btn" value="Submit">
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- footer -->
      <footer class = "section">
