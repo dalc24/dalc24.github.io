@@ -387,18 +387,6 @@ header {
     border-radius: var(--radius);
     object-fit: cover;
     height: 20rem;
-  }
-  @media screen and (min-width: 992px) {
-    .about-img {
-      margin-bottom: 0;
-    }
-  
-    .about-center {
-      padding-top: 3rem;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 2rem;
-    }
 }
 .aboutMe {
     background: var(--clr-white);
@@ -462,6 +450,75 @@ header {
 }
 .about-content li {
   color: var(--clr-grey-5);
+}
+
+/* media changes */
+@media (min-width: 992px) {
+  .about-center {
+      padding-top: 3rem; 
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 2rem;
+  }
+
+  .comma-list {
+    display: none; 
+  }
+
+  .course-list {
+    display: block; 
+  }
+}
+
+@media (min-width: 773px) and (max-width: 991px) {
+  .about-center {
+      padding-top: 2rem;
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .content p {
+    font-size: 0.8rem;
+  }
+
+  .comma-list {
+    display: block; 
+    font-size: 0.8rem;
+  }
+
+  .course-list {
+    display: none; 
+    font-size: 0.7rem;
+  }
+}
+
+
+@media (max-width: 773px) {
+  .about-img img {
+      height: 15rem;
+  }
+
+  .about-center {
+      padding-top: 0.5rem;
+      grid-template-columns: 1fr; 
+  }
+
+  .about-content {
+      padding: 1rem;
+  }
+
+  .tab-btn {
+      font-size: 0.75rem;
+      padding: 0.5rem 0;
+  }
+
+  .course-list {
+    display: none;
+  }
+
+  .comma-list {
+    display: block; 
+    font-size: 0.8rem;
+  }
 }
 
 
@@ -541,6 +598,14 @@ header {
   margin: 0; 
 
 }
+
+/* in development */
+.card-list .card-link .badge.development {
+  color: #bd0e05;
+  background: #ff9893;
+
+} 
+
 
 /* badges for languages */
 .card-list .card-link .badge.java {
@@ -879,12 +944,12 @@ header {
 
 .contact-input {
   width: 100%;
-  height: auto; /* Adjust height automatically based on padding */
+  height: auto; 
   background: transparent;
   border: 2px solid var(--clr-white);
   border-radius: 10px; 
   outline: none;
-  padding: 10px 10px; /* Increase top and bottom padding */
+  padding: 10px 10px;
   color: var(--clr-white);
   font-size: 16px;
 }
