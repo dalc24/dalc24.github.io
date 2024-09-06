@@ -84,35 +84,43 @@
 
       <div class="about-center section-center">
         <article class="about-img">
-          <img src="./hero-bcg.jpeg" alt="" />
+          <img src="./aboutme.png" alt="" />
         </article>
         <article class="aboutMe">
           <!-- btn container -->
           <div class="btn-container">
             <button class="tab-btn active" data-id="me-background">background</button>
             <button class="tab-btn" data-id="education">education</button>
-            <button class="tab-btn" data-id="skills">coursework</button>
+   <!--         <button class="tab-btn" data-id="skills">coursework</button> -->
           </div>
           <div class="about-content">
             <!-- single item -->
             <div class="content active" id="me-background">
-              <h4>history</h4>
+              <h4>background</h4>
               <p>
-                I'm baby wolf pickled schlitz try-hard normcore marfa man bun
+<!--                I'm baby wolf pickled schlitz try-hard normcore marfa man bun
                 mumblecore vice pop-up XOXO lomo kombucha glossier bicycle
                 rights. Umami kinfolk salvia jean shorts offal venmo. Knausgaard
                 tilde try-hard, woke fixie banjo man bun. Small batch tumeric
                 mustache tbh wayfarers 8-bit shaman chartreuse tacos. Viral
                 direct trade hoodie ugh chambray, craft beer pork belly flannel
-                tacos single-origin coffee art party migas plaid pop-up.
+                tacos single-origin coffee art party migas plaid pop-up.-->
+                Hi, I'm Desiree, a computer science enthusiast  with a passion of 
+                software development. I have experience working in different 
+                programming languages in both front-end and back-end development. 
+                Along my journey in the tech field, I have built different 
+                personal projects that further developed my skills including 
+                a split expenses program using Java and JavaSwing. When I'm not
+                coding, you can find me running or reading a mystery book. Feel
+                free to checkout my portfolio and reach out!
               </p>
             </div>
             <!-- end of single item -->
             <!-- single item -->
             <div class="content" id="education">
-              <h4>vision</h4>
+              <h4>education</h4>
               <p>
-                Man bun PBR&B keytar copper mug prism, hell of helvetica. Synth
+   <!--             Man bun PBR&B keytar copper mug prism, hell of helvetica. Synth
                 crucifix offal deep v hella biodiesel. Church-key listicle
                 polaroid put a bird on it chillwave palo santo enamel pin,
                 tattooed meggings franzen la croix cray. Retro yr aesthetic four
@@ -120,15 +128,29 @@
                 Hoodie bushwick pour-over jean shorts chartreuse shabby chic.
                 Roof party hammock master cleanse pop-up truffaut, bicycle
                 rights skateboard affogato readymade sustainable deep v
-                live-edge schlitz narwhal.
+                live-edge schlitz narwhal. -->
+                <span class="school"> University of California, San Diego</span> &mdash; La Jolla, CA
+                <br>
+                Bachelor of Science in Computer Science, June 2024
               </p>
+              <h4> coursework </h4>
               <ul>
-                <li>list item</li>
-                <li>list item</li>
-                <li>list item</li>
+                <li> Basic Data Structures and Object-Orient Design</li>
+                <li> Discrete Mathematics </li>
+                <li> Computer Organization and Systems Program </li>
+                <li> Advanced Data Structures </li>
+                <li> Software Engineering </li>
+                <li> Intro to Computer Architecture </li>
+                <li> Human-Computer Interaction Design </li>
+                <li> Computer Graphics </li>
+                <li> Computer Operating System</li>
+              <li> Database System Principles </li>
+              <li>Intro to Machine Learning </li>
+              <li>Intro to Computer Security </li>
               </ul>
             </div>
             <!-- end of single item -->
+
             <!-- single item -->
             <div class="content" id="skills">
               <h4>goals</h4>
@@ -205,10 +227,62 @@
             <ul class="card-list swiper-wrapper">
     
               <li class="card-item swiper-slide">
-                <a href="#" class="card-link">
-                  <img src="images/developer.jpg" alt="Card Image" class="card-image">
-                  <p class="badge developer"> Developer </p>
-                  <h2 class="card-title"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate quia magnam id nobis ratione rerum repellat iure vel maxime temporibus?</h2>
+                <a href="https://github.com/ucsd-cse110-sp23/cse-110-project-team-3" class="card-link">
+                  <img src="proj-img/say-it-proj.png" alt="Card Image" class="card-image">
+                  <div class="badge-container"> 
+                    <p class="badge java"> Java </p>
+                    <p class="badge javaswing"> JavaSwing</p>
+                    <p class="badge mongodb">MongoDB</p>
+                 </div>
+                  <h2 class="card-header"> Say-It Assistant </h2>
+                  <p class="card-title"> 
+                    Say-It Assistant is a user-friendly program powered by OpenAI and IWhisper API, 
+                    that allows users to ask questions and recieve answers. Using voice commands, users can make 
+                    inquiries or send emails from their Say-It accounts, securely stored in MongoDB.
+
+                  </p>
+                  <button class="card-button 
+                  material-symbols-outlined"> arrow_forward </button>
+                </a>
+              </li>
+    
+              <li class="card-item swiper-slide">
+                <a href="https://github.com/dalc24/Calc" class="card-link">
+                  <img src="proj-img/calculator-proj.png" alt="Card Image" class="card-image">
+                  <div class="badge-container"> 
+                    <p class="badge java"> Java </p>
+                    <p class="badge javaswing"> JavaSwing</p>
+                 </div>
+                 <h2 class="card-header"> Calculator </h2>
+                 <p class="card-title"> 
+                  Calculator is a java program used to perform mathematical operations. It supports
+                  basic functions such as addition, subtraction, multiplication, and the division of
+                  whole numbers and decimal numbers. It also has a tip button that calculates 
+                  15% of a user input number. 
+                 </p>
+                  <button class="card-button 
+                  material-symbols-outlined"> arrow_forward </button>
+                </a>
+              </li>
+
+              <li class="card-item swiper-slide">
+                <a href="https://github.com/varunraisinghal/CSE151A-MachineLearningFinalProject" class="card-link">
+                  <img src="proj-img/ml-songs.png" alt="Card Image" class="card-image">
+                  <div class="badge-container"> 
+                    <p class="badge python"> Python </p>
+                    <p class="badge tensorflow"> Tensorflow</p>
+                    <p class="badge keras">Keras</p>
+                    <p class="badge matplotlib">Matplotlib</p>
+                    <p class="badge scikit">Scikit-learn</p>
+                 </div>
+                 <h2 class="card-header"> Song Popularity </h2>
+                 <p class="card-title"> 
+                  My course group and I created three machine learning models that could better understand 
+                  and predict song popularity from a 2023 Spotify dataset that includes characteristics of 
+                  popular songs. We determined the signficiant features that could influence
+                  popularity. 
+                 </p>
+
                   <button class="card-button 
                   material-symbols-outlined"> arrow_forward </button>
                 </a>
@@ -216,39 +290,34 @@
     
               <li class="card-item swiper-slide">
                 <a href="#" class="card-link">
-                  <img src="images/designer.jpg" alt="Card Image" class="card-image">
-                  <p class="badge designer"> Designer </p>
-                  <h2 class="card-title"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate quia magnam id nobis ratione rerum repellat iure vel maxime temporibus?</h2>
-                  <button class="card-button 
-                  material-symbols-outlined"> arrow_forward </button>
+                  <img src="proj-img/split-it.png" alt="Card Image" class="card-image">
+                  <div class="badge-container"> 
+                    <p class="badge java"> Java </p>
+                    <p class="badge javaswing"> JavaSwing</p>
+                 </div>
+                  <h2 class="card-header"> Split It </h2>
+                  <p class="card-title"> 
+                    Split It is an expense management program that allows users to keep track and maintain expenses 
+                    in a group setting. Users are able to divide cost among family and friends providing a clear view of 
+                    who owes and the amounts due. 
+                  </p>
+                  <button class = "card-button material-symbols-outlined"> arrow_forward </button>
                 </a>
               </li>
     
-              <li class="card-item swiper-slide">
-                <a href="#" class="card-link">
-                  <img src="images/marketer.jpg" alt="Card Image" class="card-image">
-                  <p class="badge marketer"> Marketer </p>
-                  <h2 class="card-title"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate quia magnam id nobis ratione rerum repellat iure vel maxime temporibus?</h2>
-                  <button class="card-button 
-                  material-symbols-outlined"> arrow_forward </button>
-                </a>
-              </li>
     
               <li class="card-item swiper-slide">
-                <a href="#" class="card-link">
-                  <img src="images/gamer.jpg" alt="Card Image" class="card-image">
-                  <p class="badge gamer"> Gamer </p>
-                  <h2 class="card-title"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate quia magnam id nobis ratione rerum repellat iure vel maxime temporibus?</h2>
-                  <button class="card-button 
-                  material-symbols-outlined"> arrow_forward </button>
-                </a>
-              </li>
-    
-              <li class="card-item swiper-slide">
-                <a href="#" class="card-link">
-                  <img src="images/editor.jpg" alt="Card Image" class="card-image">
-                  <p class="badge editor"> Editor </p>
-                  <h2 class="card-title"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate quia magnam id nobis ratione rerum repellat iure vel maxime temporibus?</h2>
+                <a href="https://github.com/dalc24/dalc24.github.io" class="card-link">
+                  <img src="proj-img/website.png" alt="Card Image" class="card-image">
+                  <div class="badge-container"> 
+                    <p class="badge html"> HTML/CSS </p>
+                    <p class="badge javascript"> JavaScript</p>
+                 </div>
+                  <h2 class="card-header"> dalc24.github.io </h2>
+                  <p class="card-title"> 
+                    This very website was created using HTML/CSS and JavaScript in help with Github Pages. To look at
+                    the styling click on this card to find how everything was made! 
+                  </p>
                   <button class="card-button 
                   material-symbols-outlined"> arrow_forward </button>
                 </a>
