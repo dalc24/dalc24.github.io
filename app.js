@@ -111,6 +111,23 @@ aboutMe.addEventListener('click', function(e) {
     }
 });
 
+// ********** about me section list ************
+const courseList = document.querySelector('.course-list');
+const commaList = document.querySelector('.comma-list');
+
+// Get the list items from the course list
+const listItems = Array.from(courseList.querySelectorAll('li'));
+
+// Map the list items to their text content
+const courses = listItems.map(item => item.textContent);
+
+// Join the courses with commas
+const commaSeparatedCourses = courses.join(',');
+
+// Set the text content of the comma-list
+commaList.textContent = commaSeparatedCourses;
+
+
 
 // ********** projects -- swiper************
 new Swiper('.card-wrapper', {
@@ -147,5 +164,7 @@ new Swiper('.card-wrapper', {
     }
   
   });
+
+
 
 
