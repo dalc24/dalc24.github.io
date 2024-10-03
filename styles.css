@@ -672,6 +672,11 @@ header {
   background: #f0e6ff;
 } 
 
+/* badges for web dev */
+.card-list .card-link .badge.react {
+  color:#213d42;
+  background: #91eeff;
+}
 
 .card-list .card-link .card-header {
   font-size: 1.19rem;
